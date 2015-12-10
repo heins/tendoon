@@ -22,12 +22,16 @@ Start Tendoon, select your IoT device, connect your GPIOs to your message, downl
 
 ## Example
 
-For Raspberry Pi
+For Raspberry Pi and MQTT (uses JSON-LD)
 
-> GPIO07 --> /gpio07/input --> /startbutton, 0: not_pressed, 1: pressed
-> GPIO14 --> /gpio14/output --> /led/run, 0: off, 1: on, attribute: color: green.
+> GPIO07 --> topic: /gpio07/input --> topic: /startbutton/state, 0: not_pressed, 1: pressed, attribute: port: digital_input
+> GPIO14 --> topic: /gpio14/output --> topic: /led/run/state, 0: off, 1: on, attribute: color: green, port: digital_output
 
-## Hint
+## Defining your IoT Devices
+
+For Tendoon we will use a simle descrition language to define the interface and habit for IoT devices or Cyber Physical Systems,
+
+## Notice
 
 The GUI of Tendoon should be seamlessly integrated into MAIER - Programming Things.
 
