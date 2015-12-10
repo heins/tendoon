@@ -24,6 +24,10 @@ Start Tendoon, select your IoT device, connect your GPIOs to your message, downl
 
 For Raspberry Pi
 
->> GPIO07 --> /gpio07/input --> /startbutton, 0: not_pressed, 1: pressed
->> GPIO14 --> /gpio14/output --> /led/run, 0: off, 1: on, attribute: color: green.
+> GPIO07 --> /gpio07/input --> /startbutton, 0: not_pressed, 1: pressed
+> GPIO14 --> /gpio14/output --> /led/run, 0: off, 1: on, attribute: color: green.
+
+## Hint
+
+The GUI of Tendoon should be seamlessly integrated into MAIER - Programming Things.
 
